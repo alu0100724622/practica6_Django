@@ -54,7 +54,7 @@ ROOT_URLCONF = 'practica6.urls'
 WSGI_APPLICATION = 'practica6.wsgi.application'
 
 TEMPLATE_DIRS = (
- 	'/home/noelia/shared/django/practica6/P6/templates',
+ 	'/home/noelia/shared/django/P6/P6/templates',
 )
 
 # Database
@@ -66,6 +66,13 @@ DATABASES = {
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
+
+
+STATIC_ROOT = ''
+STATIC_URL = '/css/'
+STATICFILES_DIRS = ('/home/noelia/shared/django/P6/P6/css',)
+
+ 
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.6/topics/i18n/
@@ -84,4 +91,10 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.6/howto/static-files/
 
-STATIC_URL = '/static/'
+#STATIC_URL = '/static/'
+#STATIC_ROOT = ''
+#STATIC_URL = '/css/'
+#STATICFILES_DIRS = ('/home/noelia/shared/django/P6/P6/css')
+#INSTALLED_APPS = (
+#    'django.contrib.staticfiles',
+
